@@ -161,7 +161,7 @@ function Team() {
               Come to one of our meetings and say hi! We'd love to meet you.
             </p>
             <div className="cta-buttons">
-              <Button href="#/join" variant="white" size="large">
+              <Button href="#/workshops" variant="white" size="large">
                 Join Our Chapter
               </Button>
               <Button href="#/contact" variant="secondary" size="large">

@@ -14,10 +14,9 @@ To offer free computer science education and programs designed to support girls 
 
 - **Home Page**: Hero section with chapter overview and quick links
 - **About**: Chapter mission, values, and connection to GWC national
-- **Workshops**: Python fundamentals curriculum and workshop details
+- **Workshops**: Python fundamentals curriculum, eligibility, sign-up process, and FAQ
 - **Team**: Leadership team and faculty advisor information
 - **Gallery**: Photo gallery with lightbox functionality
-- **Join**: Eligibility information, sign-up process, and FAQ
 - **Contact**: Contact methods and inquiry form
 
 ## Tech Stack
@@ -132,7 +131,6 @@ gwc/
 │   │   ├── Contact.jsx
 │   │   ├── Gallery.jsx
 │   │   ├── Home.jsx
-│   │   ├── Join.jsx
 │   │   ├── Team.jsx
 │   │   └── Workshops.jsx
 │   ├── App.jsx

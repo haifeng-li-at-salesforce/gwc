@@ -108,7 +108,7 @@ function Contact() {
           </div>
           
           <div className="quick-links-grid">
-            <a href="#/join" className="quick-link-card">
+            <a href="#/workshops" className="quick-link-card">
               <span className="quick-icon">👋</span>
               <h3>How to Join</h3>
               <p>Learn about membership and sign-up process</p>
@@ -151,7 +151,7 @@ function Contact() {
             <p>
               Don't wait! Join our chapter today and begin your journey in tech.
             </p>
-            <Button href="#/join" variant="white" size="large">
+            <Button href="#/workshops" variant="white" size="large">
               Join Girls Who Code
             </Button>
           </div>

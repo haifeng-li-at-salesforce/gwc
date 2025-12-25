@@ -8,7 +8,7 @@ function Footer() {
     { path: '/about', label: 'About Us' },
     { path: '/workshops', label: 'Workshops' },
     { path: '/team', label: 'Our Team' },
-    { path: '/join', label: 'Join Us' },
+    { path: '/contact', label: 'Contact' },
   ]
   
   const socialLinks = [

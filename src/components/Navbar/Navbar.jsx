@@ -25,7 +25,6 @@ function Navbar() {
     { path: '/workshops', label: 'Workshops' },
     { path: '/team', label: 'Team' },
     { path: '/gallery', label: 'Gallery' },
-    { path: '/join', label: 'Join Us' },
     { path: '/contact', label: 'Contact' },
   ]
   

@@ -143,7 +143,7 @@ function About() {
               Join our chapter and start your journey in computer science today!
             </p>
             <div className="cta-actions">
-              <Button href="#/join" variant="primary" size="large">
+              <Button href="#/workshops" variant="primary" size="large">
                 Join Our Chapter
               </Button>
               <Button href="#/contact" variant="secondary" size="large">

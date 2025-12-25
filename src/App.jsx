@@ -6,7 +6,6 @@ import About from './pages/About'
 import Workshops from './pages/Workshops'
 import Team from './pages/Team'
 import Gallery from './pages/Gallery'
-import Join from './pages/Join'
 import Contact from './pages/Contact'
 import './App.css'
 
@@ -21,7 +20,6 @@ function App() {
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/team" element={<Team />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/join" element={<Join />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

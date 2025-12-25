@@ -37,7 +37,7 @@ function Home() {
         subtitle="Troy High School Chapter"
         title={<>Empowering Girls to <span>Code</span> & Thrive in Tech</>}
         description="Join our free computer science education programs and become part of a community that supports girls in learning to code and pursuing careers in technology."
-        primaryAction={{ label: 'Join Us Today', href: '#/join' }}
+        primaryAction={{ label: 'Join Us Today', href: '#/workshops' }}
         secondaryAction={{ label: 'Learn More', href: '#/about' }}
       />
 
@@ -134,7 +134,7 @@ empower_girls()`}
               supportive, fun environment.
             </p>
             <div className="cta-buttons">
-              <Button href="#/join" variant="white" size="large">
+              <Button href="#/workshops" variant="white" size="large">
                 Join Our Chapter
               </Button>
               <Button href="#/contact" variant="secondary" size="large">
