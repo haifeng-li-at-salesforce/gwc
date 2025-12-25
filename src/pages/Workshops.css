@@ -1,0 +1,341 @@
+/* Highlights Section */
+.highlights-section {
+  background: var(--color-white);
+  padding-top: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-lg);
+}
+
+.highlight-card {
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.highlight-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-teal-dark);
+}
+
+.highlight-card p {
+  color: var(--color-gray-700);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Why Python Section */
+.why-python {
+  background: var(--color-cream);
+}
+
+.why-python-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.section-label {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: rgba(255, 111, 97, 0.1);
+  color: var(--color-coral);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.why-python-content h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin-bottom: var(--space-lg);
+  color: var(--color-teal-dark);
+}
+
+.why-python-content p {
+  color: var(--color-gray-700);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.python-benefits {
+  margin-top: var(--space-lg);
+}
+
+.python-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  color: var(--color-gray-700);
+  font-size: 1rem;
+}
+
+.python-benefits .check {
+  color: var(--color-mint);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Code Example */
+.python-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.code-example {
+  background: var(--color-teal-dark);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  max-width: 450px;
+}
+
+.code-example .code-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--space-md);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.code-example .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.code-example .dot.red { background: #ff5f56; }
+.code-example .dot.yellow { background: #ffbd2e; }
+.code-example .dot.green { background: #27ca40; }
+
+.code-example .filename {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: monospace;
+}
+
+.code-example .code-content {
+  padding: var(--space-lg);
+  font-family: 'Fira Code', 'Monaco', monospace;
+  font-size: 0.9rem;
+  color: #a8dadc;
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: auto;
+}
+
+/* Curriculum Section */
+.curriculum-section {
+  background: var(--color-white);
+}
+
+.curriculum-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.curriculum-item {
+  display: flex;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.curriculum-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 50px;
+  top: 45px;
+  bottom: -20px;
+  width: 2px;
+  background: var(--color-gray-200);
+}
+
+.timeline-marker {
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.week-badge {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(135deg, var(--color-coral), var(--color-coral-light));
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+.curriculum-content {
+  flex: 1;
+  background: var(--color-cream);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+}
+
+.curriculum-content h3 {
+  font-size: 1.25rem;
+  color: var(--color-teal-dark);
+  margin-bottom: var(--space-md);
+}
+
+.curriculum-content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.curriculum-content li {
+  color: var(--color-gray-700);
+  font-size: 0.95rem;
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.curriculum-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-coral);
+}
+
+/* Info Section */
+.info-section {
+  background: var(--color-cream);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+}
+
+.info-card {
+  background: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-teal-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.info-card p {
+  color: var(--color-gray-700);
+  margin: 0;
+}
+
+.info-detail {
+  font-size: 0.9rem;
+  color: var(--color-gray-500) !important;
+  margin-top: var(--space-xs) !important;
+}
+
+/* CTA Section */
+.workshop-cta {
+  background: linear-gradient(135deg, var(--color-coral), var(--color-coral-dark));
+  padding: var(--space-4xl) 0;
+}
+
+.workshop-cta .cta-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.workshop-cta h2 {
+  color: var(--color-white);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: var(--space-md);
+}
+
+.workshop-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xl);
+}
+
+.workshop-cta .cta-buttons {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workshop-cta .btn-secondary {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.workshop-cta .btn-secondary:hover {
+  background: var(--color-white);
+  color: var(--color-coral);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .why-python-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .python-visual {
+    order: -1;
+  }
+  
+  .curriculum-item {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  
+  .curriculum-item:not(:last-child)::before {
+    display: none;
+  }
+  
+  .timeline-marker {
+    width: auto;
+  }
+  
+  .curriculum-content ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .workshop-cta .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .workshop-cta .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,97 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: 2px solid transparent;
+  white-space: nowrap;
+}
+
+/* Sizes */
+.btn-small {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.btn-medium {
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+/* Primary Variant */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-coral), var(--color-coral-light));
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(255, 111, 97, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-coral-dark), var(--color-coral));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 97, 0.4);
+  color: var(--color-white);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Secondary Variant */
+.btn-secondary {
+  background: transparent;
+  color: var(--color-coral);
+  border-color: var(--color-coral);
+}
+
+.btn-secondary:hover {
+  background: var(--color-coral);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* Teal Variant */
+.btn-teal {
+  background: linear-gradient(135deg, var(--color-teal), var(--color-teal-light));
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(26, 83, 92, 0.3);
+}
+
+.btn-teal:hover {
+  background: linear-gradient(135deg, var(--color-teal-dark), var(--color-teal));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 83, 92, 0.4);
+  color: var(--color-white);
+}
+
+/* White Variant */
+.btn-white {
+  background: var(--color-white);
+  color: var(--color-coral);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-coral-dark);
+}
+
+/* Disabled State */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+

@@ -1,0 +1,168 @@
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: calc(80px + var(--space-3xl)) 0 var(--space-3xl);
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-white) 100%);
+}
+
+.hero-default {
+  background: linear-gradient(
+    135deg,
+    var(--color-cream) 0%,
+    #FFF5F3 50%,
+    var(--color-white) 100%
+  );
+}
+
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-teal-dark) 0%,
+    var(--color-teal) 50%,
+    var(--color-teal-light) 100%
+  );
+}
+
+.hero-gradient .hero-title,
+.hero-gradient .hero-description,
+.hero-gradient .hero-subtitle {
+  color: var(--color-white);
+}
+
+.hero-gradient .hero-subtitle {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+}
+
+/* Pattern Elements */
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.pattern-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.pattern-1 {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(135deg, var(--color-coral), var(--color-coral-light));
+  top: -200px;
+  right: -100px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.pattern-2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--color-teal), var(--color-mint));
+  bottom: -100px;
+  left: -50px;
+  animation: float 10s ease-in-out infinite reverse;
+}
+
+.pattern-3 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, var(--color-purple), var(--color-coral));
+  top: 30%;
+  right: 20%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.pattern-dots {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(var(--color-coral) 2px, transparent 2px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-subtitle {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: linear-gradient(135deg, rgba(255, 111, 97, 0.15), rgba(255, 111, 97, 0.1));
+  color: var(--color-coral);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  margin-bottom: var(--space-lg);
+  color: var(--color-teal-dark);
+}
+
+.hero-title span {
+  color: var(--color-coral);
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--color-gray-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+  }
+  
+  .hero-actions .btn {
+    width: 100%;
+  }
+  
+  .pattern-1 {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .pattern-2 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
